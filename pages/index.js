@@ -1,4 +1,3 @@
-import Head from "next/head";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -8,13 +7,9 @@ const Wrapper = styled.div`
 const Home = () => {
   return (
     <Wrapper>
-      <Head>
-        <title>Tobias Lohse</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main>
         <h1>Tobias Lohse</h1>
-        <p>My new website build on iPad</p>
+        <p>My new website built on iPad</p>
       </main>
     </Wrapper>
   );
