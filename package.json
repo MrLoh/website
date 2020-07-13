@@ -13,5 +13,8 @@
   "devDependencies": {
     "babel-plugin-styled-components": "1.10.7"
   },
-  "prettier": {}
+  "prettier": {
+    "jsxBracketSameLine": false,
+    "singleQuote": true
+  }
 }

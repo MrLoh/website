@@ -1,14 +1,15 @@
-import Head from "next/head";
-import App from "next/app";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
+import Head from 'next/head';
+import App from 'next/app';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-const theme = { colors: { accent: "#009b50" } };
+const theme = { colors: { accent: '#009b50' } };
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    ${(p) => Object.entries(p.theme.colors)
-      .map(([name, value]) => `--${name}: ${value};`)
-      .join('\n')}
+    ${(p) =>
+      Object.entries(p.theme.colors)
+        .map(([name, value]) => `--${name}: ${value};`)
+        .join('\n')}
   }
   html, body {
     background-color: var(--accent);
