@@ -1,16 +1,31 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
+
+const Avatar = styled.img.attrs({
+  src: '/avatar.svg',
+  alt: 'Avatar'
+})`
+  width: 15rem;
+  height: 15rem;
+  background-color: black;
+  border-radius: 50%;
+`
+
+
 
 const Home = () => {
   return (
     <Wrapper>
-      <main>
-        <h1>Tobias Lohse</h1>
-        <p>My new website built on iPad</p>
-      </main>
+      <Avatar />
+      <p>Hi,</p>
+      <p>My name is Tobias and I am </p>
     </Wrapper>
   );
 };

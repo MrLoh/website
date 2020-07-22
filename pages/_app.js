@@ -2,7 +2,7 @@ import Head from 'next/head';
 import App from 'next/app';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-const theme = { colors: { accent: '#009b50' } };
+const theme = { colors: { accent: '#4BA26C' } };
 
 const GlobalStyle = createGlobalStyle`
   :root {
